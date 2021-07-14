@@ -70,7 +70,7 @@ The performance of the PID controller at this stage with Kp = 0.05, Kd = 1.15 an
 
 ![PID](https://www.youtube.com/watch?v=2FBhc4WeJZQ "PID")
 
-In case of scenario where the target value is constant, the Integral error considers all the past errors, however in our case, where the target value is constantly changing, keeping track of all the past errors does not make sense. Therefore , I decided to use only the past 10 erros for calculating the integral error. This was achieved by using a vector which can only store 10 elements at a time and deletes the oldest error if the limit is exceeded. By tuning the Ki, I reached at a value of 0.01, which helped keep the car center during most of the drive.
+In case of a scenario where the target value is constant, the Integral error has to considers all the past errors from t =0, however in our case, where the target value is constantly changing, keeping track of all the past errors does not make sense. Therefore, I decided to use only the past 10 erros for calculating the integral error. This was achieved by using a vector which can only store 10 elements at a time and deletes the oldest error if the limit is exceeded. By tuning the Ki, I reached at a value of 0.01, which helped keep the car center during most of the drive.
 
 Thus the final values are: Kp = 0.05, Ki = 0.01 ,Kd = 1.15.
 
