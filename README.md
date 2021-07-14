@@ -58,7 +58,7 @@ I or Integral component of the cotroller helps to tackle the steady state error 
 # P
 I used manual tuning approch in this PID controller project. First, step was to increase the P coefficient to a point where it induces oscillations in the motion of the car, while keeping other coefficints as 0. This value turned out to be 0.05.
 
-[![IMAGE ALT TEXT](https://youtu.be/tQsLygo3APE/0.jpg)](https://youtu.be/tQsLygo3APE "P alone")
+[![IMAGE ALT TEXT](https://img.youtube.com/watch?v=tQsLygo3APE/0.jpg)](https://www.youtube.com/watch?v=tQsLygo3APE "P alone")
 
 
 
