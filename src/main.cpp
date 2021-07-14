@@ -8,8 +8,6 @@
 // for convenience
 using nlohmann::json;
 using std::string;
-std::vector<double> p = {0,0,0};
-std::vector<double> dp = {1,1,1};
 double v =0.0;
 // For converting back and forth between radians and degrees.
 constexpr double pi() { return M_PI; }
@@ -33,7 +31,7 @@ string hasData(string s) {
 }
 
 PID stearing_pid;
-int state = 0;
+
 
 int main() {
 
